@@ -18,6 +18,7 @@ class ContactListVC: BaseViewController,LogoutDelegate {
     @IBOutlet weak var tblContacts: UITableView!
     
     private var viewModel = ContactListViewModel()
+    var selectedIndexPath : IndexPath?
     
     // MARK: - ViewLifeCycle Methods
     
@@ -74,7 +75,7 @@ extension ContactListVC : TableViewDelegateDataSource
         {
             self.navigateToMovieDetailsWithMovieData(data, opType: .EditContact)
         }
-        
+        selectedIndexPath = indexPath
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
@@ -117,7 +118,10 @@ extension ContactListVC : AddEditContactDelegate
         case .AddContact:
             viewModel.updateContact(diccContact: diccContact)
         case .EditContact:
-            self.tblContacts.reloadData()
+            if let indexPath = selectedIndexPath
+            {
+                self.tblContacts.reloadRows(at: [indexPath], with: .fade)
+            }
     }
     }
 }
