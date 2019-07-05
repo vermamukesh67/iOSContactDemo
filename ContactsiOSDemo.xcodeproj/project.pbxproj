@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		657744CD22CF571B0061C7A2 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657744CC22CF571B0061C7A2 /* Package.swift */; };
 		8BD810912202CD43009E9B4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD810902202CD43009E9B4C /* AppDelegate.swift */; };
 		8BD810962202CD43009E9B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD810942202CD43009E9B4C /* Main.storyboard */; };
 		8BD810992202CD43009E9B4C /* Contact.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BD810972202CD43009E9B4C /* Contact.xcdatamodeld */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		657744CC22CF571B0061C7A2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8BD8108D2202CD43009E9B4C /* ContactsiOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsiOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD810902202CD43009E9B4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD810952202CD43009E9B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		8BD810842202CD43009E9B4C = {
 			isa = PBXGroup;
 			children = (
+				657744CC22CF571B0061C7A2 /* Package.swift */,
 				8BD8108F2202CD43009E9B4C /* ContactsiOSDemo */,
 				8BD810A72202CD45009E9B4C /* ContactsiOSDemoTests */,
 				8BD810B22202CD45009E9B4C /* ContactsiOSDemoUITests */,
@@ -414,6 +417,7 @@
 				8BD810992202CD43009E9B4C /* Contact.xcdatamodeld in Sources */,
 				8BD810D52202DB39009E9B4C /* ContactListViewModel.swift in Sources */,
 				C0FD9A0A2203527400AB76F0 /* Contact+CoreDataClass.swift in Sources */,
+				657744CD22CF571B0061C7A2 /* Package.swift in Sources */,
 				8BD810E02202FB7E009E9B4C /* ContactAddEditVC.swift in Sources */,
 				C0FD9A1122037CF900AB76F0 /* ContactDetailViewModel.swift in Sources */,
 				8BD810D32202D89C009E9B4C /* ContactListVC.swift in Sources */,
